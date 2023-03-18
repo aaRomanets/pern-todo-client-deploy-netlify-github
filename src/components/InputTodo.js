@@ -13,6 +13,7 @@ const InputTodo = () => {
         {
             //составленное название нового задания
             const body = {description};
+            console.log(body)
             //POST запрос на отправление составленного названия нового задания на сервер в соответсвующую базу данных
             await fetch("https://pern-todo-server.herokuapp.com/todos", 
             {
